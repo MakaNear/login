@@ -3,7 +3,7 @@ import { smoothScroll } from "/src/helpers/smoothScroll.js";
 import { url } from "/src/helpers/urlConfig.js";
 import fetchLogin from "/src/pages/login/fetchLogin.js";
 
-export default function main() {
+export async function main() {
   const promise = loadComponent("", url.pages.login + "login.html");
 
   promise
