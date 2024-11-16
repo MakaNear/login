@@ -9,9 +9,9 @@ function getURLContentHTML() {
   let hashlink = getHash();
   switch (hashlink) {
     case "login":
-      return url.pages.login + "login.html";
+      return url.pages.login + "wrapper-login.html";
     default:
-      return url.pages.login + "login.html";
+      return url.pages.login + "wrapper-login.html";
   }
 }
 

@@ -9,16 +9,11 @@ export const backend = {
 export const croot = folderPath() + "src/";
 
 export const folder = {
-  components: croot + "components/",
   pages: croot + "pages/",
   helpers: croot + "helpers/",
 };
 
 export const url = {
-  components: {
-    navbar: folder.components + "navbar/",
-    footer: folder.components + "footer/",
-  },
   pages: {
     login: folder.pages + "login/",
   },

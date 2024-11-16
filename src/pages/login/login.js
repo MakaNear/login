@@ -1,10 +1,13 @@
-import loadComponent from "/src/helpers/loadComponent.js";
-import { smoothScroll } from "/src/helpers/smoothScroll.js";
-import { url } from "/src/helpers/urlConfig.js";
-import fetchLogin from "/src/pages/login/fetchLogin.js";
+import loadComponent from "../../helpers/loadComponent.js";
+import { smoothScroll } from "../../helpers/smoothScroll.js";
+import { url } from "../../helpers/urlConfig.js";
+import { fetchLogin } from "./fetchlogin.js";
 
 export async function main() {
-  const promise = loadComponent("", url.pages.login + "login.html");
+  const promise = loadComponent(
+    ".wrapper-login",
+    url.pages.login + "login.html"
+  );
 
   promise
     .then(() => {

@@ -4,6 +4,7 @@
 .wrapper-login {
   @include m.flex();
   padding: 4vw;
+  background-color: map-get($map: v.$color, $key: "light-gray");
 
   .login {
     @include m.flex($direction: column);

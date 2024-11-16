@@ -1,6 +1,6 @@
-import { backend } from "../../helpers/urlConfig";
+import { backend } from "../../helpers/urlConfig.js";
 
-export default function fetchLogin() {
+export async function fetchLogin() {
   const getEmail = document.querySelector("input[name='Email']");
   const getPassword = document.querySelector("input[name='Password']");
 
