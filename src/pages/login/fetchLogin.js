@@ -31,9 +31,8 @@ export async function fetchLogin() {
         const result = await response.json();
 
         if (status === 200) {
-          // Save the token in cookies
           const token = result.token;
-          document.cookie = `login=${token}; path=/; secure; HttpOnly;`; // Set cookie for the token
+          document.cookie = `login=${token}; path=/; secure;`;
 
           Swal.fire({
             title: "Login Berhasil",
